@@ -44,3 +44,12 @@ input, textarea {
   width: 350px;
   margin: 0 auto;
 }
+
+.footer {
+  background: black;
+}
+
+
+.social-media-box {
+  width: 50px;
+}
