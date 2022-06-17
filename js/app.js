@@ -47,19 +47,19 @@ function createPost(e) {
             let postHolder = '';
             postBox.forEach(post => {
                 postHolder += `
-                <div class="col-md-4">
+                <div class="col-md-12 mb-3">
                     <div class="card">
                         <div class="card-body">
                             <div class="card__header">
-                                <img src="https://www.brown.edu/sites/default/files/styles/wide_xsml/public/2019-11/image2.jpg?itok=bYYj2sp3" alt="card__image" class="card__image">
+                                <img src="https://preview.colorlib.com/theme/knowledge/images/ximg_bg_3.jpg.pagespeed.ic.AbwJPYmGOW.webp" alt="card__image" class="card__image rounded" >
                             </div>
-                            <div class="card__body">
+                            <div class="card__body mt-2">
                                 <h4 id="post-title">${post.title}</h4>
                                 <p id="post-body">${post.body}</p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn btn-success" id="view-btn" onclick="openSingle(${post.id}>View</button>
-                                    <button class="btn btn-primary" onclick="updatePost(${post.id})">Update</button>
-                                    <button class="btn btn-danger" onclick="deletePost(${post.id})">Delete</button>
+                                <div class="d-flex">
+                                    <button class="btn btn-success me-2" id="view-btn" onclick="openSingle(${post.id})">Read More <span><i class="bi bi-eye"></i></span></button>
+                                    <button class="btn btn-primary me-2" onclick="updatePost(${post.id})">Update <span><i class="bi bi-pen"></i></span></button>
+                                    <button class="btn btn-danger ms-auto" onclick="deletePost(${post.id})">Delete <span><i class="bi bi-trash3"></i></span></button>
                                 </div>
                             </div>
                         </div>
