@@ -90,7 +90,7 @@ function updatePost(id) {
         .then((data) => {
 
             console.log(data)
-            let postTitles = document.querySelectorAll('.post-title') // 100 post titles [0 -99]
+            let postTitles = document.querySelectorAll('.post-title')
             let postBodies = document.querySelectorAll('.post-body')
             console.log(postTitles)
             postTitles.forEach((postTitle, index) => {
